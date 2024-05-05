@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Travel India </title>
+  <link rel="stylesheet" href="Index1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <style>
+    body {
+    background-color: #2b2e32;
+  }
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url("Imagemountain_-_91757 (1080p).gif");
+    background-size: cover;
+    background-position: center;
+    box-shadow: wheat 0px 2px 20px;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: rgb(242, 227, 14);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.heading{
+   
+    margin-top: 700px;
+    margin-left: 550px;
+    
+}
+.imglogo {
+    
+    height: 230px;
+    width: 218px;
+    margin-left: 100px;
+    border-radius: 1cap;
+}
+.imglogo img {
+    margin-top: 70px;
+    border-radius: 1cap;
+    box-shadow: rgb(111, 115, 239) 2px 2px 5px;
+}
+.content2{
+    width: 600px;
+    height: 280px;
+    padding: 20px;
+    margin-top: -200px;
+    margin-left: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: larger;
+    font-weight: 400;
+    border: 2px solid #0967e3;
+    border-radius: 2cap;
+    box-shadow: #edeff2 2px 2px 10px;
+
+    /* background-color: #35374B; */
+}
+
+
+.content2 > p1 {
+    color: #fafefa;
+    text-wrap: wrap;
+    letter-spacing: 1px;
+    line-height: 1.5;
+
+} 
+.hbanner1{
+    margin-top:100px;
+    margin-left: 200px;
+    padding: 10px;
+}
+
+.head1{
+    font-family: "Marck Script", cursive;
+    font-size: larger;
+    font-weight: 400;
+    background-color:#6171e9;  
+    border: 2px#03a393;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    border-radius: 2cap;
+    margin-left: 650px;
+}
+.head1 h1{
+    color: rgba(238, 77, 77, 0.96);
+}
+.place {
+    height: 600px;
+    width: 1250px;
+    display: flex;
+    border: 2px solid burlywood;
+    box-shadow: wheat 2px 2px 10px;
+    margin: 70px;
+    margin-left: 200px;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 2cap;
+}
+.items {
+    border-radius: 2cap;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px rgb(97, 212, 250);
+    height: 200px;
+    width: 350px;
+    background-color: rgb(170, 156, 156);
+    margin: auto;
+    font-family: "Bruno Ace SC", sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+.items:hover {
+    transform: scale(1.1);
+    transition: 1.0s;
+
+}
+.items img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.items p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+}
+.items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1;
+}
+.vid {
+    
+    border: #0672ff;
+    margin-top: 40px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 535px;
+    width: 950px;
+      
+}
+.vid video{
+    height: 100%;
+    width: 100%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    box-shadow: 1px  1px 10px wheat;
+
+}
+.hbanner2{
+    width: 1100px;
+    margin: 70px;
+    padding: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.hbanner2 img{
+    width: 1150px;
+    margin-left:170px;
+    padding: 0px;
+    border-radius: 1cap;
+    box-shadow: wheat 2px 2px 10px; 
+
+}
+#btnbook{
+    margin-top: 40px;
+    margin-left: 1200px;
+    background-color: red;
+    box-shadow: wheat 2px 2px 5px;
+}
+#btnbook:hover{
+    margin-top: 40px;
+    background-color: red;
+    box-shadow: wheat 2px 2px 15px;
+}
+#bth{
+    text-decoration:none;
+    color: yellow;
+    background-color:#009688;
+    box-shadow: wheat 2px 2px 15px;
+    margin-left: 650px;
+}
+#bth:hover{
+    text-decoration:none;
+    color: yellow;
+    background-color:#009688;
+    box-shadow: wheat 2px 2px 5px;
+    
+}
+.s {
+    width: 1000px;
+    height: 600px;
+    box-shadow: wheat 2px 2px 5px;
+    margin-top: 200px;
+    margin-left: 300px;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 1cap;
+
+}
+
+.slider {
+    margin-left: 0px;
+    width: 1000px;
+    height:600px;
+    position: absolute;
+    border-radius: 2px;
+    
+}
+.b{
+    margin-top:5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#btn1,#btn2{
+    margin-top: 20px;
+    margin-left: 0px;
+
+}
+.footer {
+    background: linear-gradient(135deg, #6452ea, #31f3fd);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+  }
+  </style>
+
+</head>
+
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <img src="India_1-removebg-preview.png" class="logo">
+      <ul>
+        <li><a href="Index1.html" target="_blank">Home</a></li>
+        <li><a href="explore.html"target="_blank">Explore</a></li>
+        <li><a href="book.html"   target="_blank">Book Now</a></li>
+        <li><a href="signup.html" target="_blank">Sign Up</a></li>
+        <li><a href="AboutUs.html"target="_blank">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>Travel India </h1>
+      <p>Watch out our New Trips <br>Join Us Today and be a part of Our Exploration</p>
+      <button type="button"><span></span>Explore</a></button>
+      <button type="button"><span></span>Book</button>
+    </div>
+    <br>
+    <div class="heading">
+      <img src="Image\_goldii.png" height="100px" width="500px">
+    </div>
+    <br>
+
+    <div class="imglogo">
+      <img src="Image\India 1.jpeg">
+    </div>
+
+    <div class="content2">
+      <p1>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a
+        rich heritage and myriad attractions, the country is among the most popular tourist destinations in the
+        world. It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the
+        tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the
+        rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct
+        geographical entity.
+      </p1><br><br>
+    </div>
+    <br>
+    <div class="hbanner1">
+      <img src="Image\Home-Banner-1.jpg">
+    </div>
+    <div class="head1">
+      <h1>Explore Places </h1>
+    </div>
+
+    <div class="place">
+      <div class="items">
+        <p>Kashmir</p>
+        <img src="Image\kashmir.jpg" alt="Kashmir">
+      </div>
+      <div class="items">
+        <p>Delhi</p>
+        <img src="Image\Delhi.jpg" alt="Delhi">
+      </div>
+      <div class="items">
+        <p>Goa</p>
+        <img src="Image\Goa-Paragliding-in-Goa.jpg" alt="Goa">
+      </div>
+      <div class="items">
+        <p>Jaisalmer</p>
+        <img src="Image\jaisalmer-desert-camel-safari.jpg" alt="Jaisalmer">
+      </div>
+      <div class="items">
+        <p>Shimla</p>
+        <img src="Image\Shimla-in-Monsoon.jpg" alt="Shimla">
+      </div>
+      <div class="items">
+        <p>Kerala</p>
+        <img src="Image\Kerala.jpg" alt="Kerla">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="hbanner2">
+      <img src="Image\header7.png">
+      <button id="btnbook">Book Now </button>
+    </div>
+
+    <div class="s">
+      <img src="Image\s1.jpeg" alt="" class="slider">
+      <img src="Image\s2.jpeg" alt="" class="slider">
+      <img src="Image\s3.jpeg" alt="" class="slider">
+      <img src="Image\s4.jpeg" alt="" class="slider">
+      <img src="Image\s5.jpeg" alt="" class="slider">
+      <img src="Image\s6.jpeg" alt="" class="slider">
+    </div>
+
+    <div class="b">
+      <button id="btn1" onclick="Previous()"> Previous </button>
+      <button id="btn2" onclick="Next()"> Next </button>
+  </div>
+
+    <script>const a =document.querySelectorAll('.slider');
+      var counter = 0;
+      a.forEach(
+          (slider,index) => 
+          {
+              slider.style.left = `${index*100}% `
+      }
+      )
+      const Previous=() => 
+      {
+          counter--
+          sliderrun()
+      }
+      const Next=() =>
+       {
+          counter++
+          sliderrun()
+      
+      }
+      const sliderrun=() =>
+      {
+          a.forEach (
+              (slider) =>
+              slider.style.transform=`translateX(-${counter*100}%`
+          )
+      }</script>
+<br><br>
+<div class="box">
+  </div>
+
+  <div class="footer">
+    <p>© 2024 Incredible India</p>
+  </div>
+</body>
+</html>
